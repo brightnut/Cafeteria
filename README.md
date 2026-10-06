@@ -15,6 +15,8 @@ A responsive cafeteria food-ordering frontend built with HTML, CSS and JavaScrip
 - LocalStorage cart persistence
 - Contact form interaction
 - Mobile navigation
+
+  
 - Created by Ashish Yadav
 
 
