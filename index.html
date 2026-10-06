@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaféHub - modern cafeteria food ordering website created by Ashish Yadav">
+  <title>CaféHub | Cafeteria Ordering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="home">
+    <a class="logo" href="#home"><span>☕</span> CaféHub</a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">🛒<span class="cart-count" id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">FRESH • FAST • CAMPUS-FRIENDLY</span>
+        <h1>Good food.<br><span>Better breaks.</span></h1>
+        <p>Order your favourite coffee, snacks and meals from one simple cafeteria experience.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#menu">Explore Menu →</a>
+          <button class="btn secondary" id="heroCartBtn">View Cart</button>
+        </div>
+        <div class="trust-row"><span>⭐ 4.8/5 rating</span><span>⚡ 10–20 min pickup</span><span>🌱 Veg options</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-food">☕</div>
+        <div class="floating-card"><strong>Today's pick</strong><span>Cappuccino + Sandwich</span><b>₹129</b></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>25+</strong><span>Menu items</span></div>
+      <div><strong>10–20</strong><span>Min. preparation</span></div>
+      <div><strong>4.8★</strong><span>Customer rating</span></div>
+      <div><strong>100%</strong><span>Digital ordering</span></div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-heading">
+        <div><span class="eyebrow">OUR MENU</span><h2>What are you craving?</h2></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search menu..."></div>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All</button>
+        <button class="filter" data-category="Coffee">☕ Coffee</button>
+        <button class="filter" data-category="Meals">🍽️ Meals</button>
+        <button class="filter" data-category="Snacks">🥪 Snacks</button>
+        <button class="filter" data-category="Desserts">🍰 Desserts</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="empty-state hidden" id="emptyState">No items found. Try another search.</p>
+    </section>
+
+    <section class="offer" id="offers">
+      <div><span class="eyebrow">TODAY'S OFFER</span><h2>Student Combo — save ₹40</h2><p>Any regular coffee + veg sandwich + cookie for just ₹149.</p><button class="btn light" id="offerBtn">Add Combo to Cart</button></div>
+      <div class="offer-icon">🎓</div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-card"><span>☕</span><h2>Built for busy students</h2><p>Skip the queue and spend your break enjoying food instead of waiting for it. CaféHub keeps ordering simple, fast and transparent.</p><div class="about-points"><span>✓ Clear pricing</span><span>✓ Quick pickup</span><span>✓ Easy ordering</span><span>✓ Mobile friendly</span></div></div>
+      <div class="steps"><span class="eyebrow">HOW IT WORKS</span><h2>Order in 3 simple steps</h2><div class="step"><b>01</b><div><strong>Choose your food</strong><p>Browse categories or search your favourite item.</p></div></div><div class="step"><b>02</b><div><strong>Add to cart</strong><p>Adjust quantities and check your total instantly.</p></div></div><div class="step"><b>03</b><div><strong>Place your order</strong><p>Confirm your details and get an order ID.</p></div></div></div>
+    </section>
+
+    <section class="section reviews">
+      <div class="center-heading"><span class="eyebrow">REVIEWS</span><h2>Loved by the campus</h2></div>
+      <div class="review-grid">
+        <article><div>★★★★★</div><p>“The ordering flow is so much easier than standing in the cafeteria queue.”</p><strong>— Rahul, Student</strong></article>
+        <article><div>★★★★★</div><p>“Clean interface, quick pickup and the prices are easy to understand.”</p><strong>— Priya, Student</strong></article>
+        <article><div>★★★★★</div><p>“The combo offers are perfect for a quick break between classes.”</p><strong>— Arjun, Student</strong></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><span class="eyebrow">CONTACT</span><h2>Need help?</h2><p>Questions about an order? Send us a message.</p></div>
+      <form id="contactForm"><input required placeholder="Your name"><input required type="email" placeholder="Email address"><textarea required rows="4" placeholder="Your message"></textarea><button class="btn primary" type="submit">Send Message</button></form>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="logo" href="#home"><span>☕</span> CaféHub</a><p>A modern cafeteria ordering experience.</p></div>
+    <div class="footer-links"><a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div class="creator">Created by <strong>Ashish Yadav</strong></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head"><h2>Your Cart</h2><button id="closeCart">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+      <div><span>GST (5%)</span><strong id="gst">₹0</strong></div>
+      <div class="total"><span>Total</span><strong id="total">₹0</strong></div>
+      <button class="btn primary full" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal hidden" id="checkoutModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <span class="eyebrow">CHECKOUT</span><h2>Complete your order</h2>
+      <form id="checkoutForm">
+        <label>Name<input required id="customerName" placeholder="Your name"></label>
+        <label>Phone<input required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit phone number"></label>
+        <label>Pickup time<select><option>ASAP (10–20 min)</option><option>After 30 minutes</option><option>After 1 hour</option></select></label>
+        <button class="btn primary full" type="submit">Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="successModal">
+    <div class="modal-card success-card"><div class="success-icon">✓</div><span class="eyebrow">ORDER CONFIRMED</span><h2>You're all set!</h2><p>Your order <strong id="orderId"></strong> has been placed successfully.</p><p class="muted">Estimated preparation time: 10–20 minutes.</p><button class="btn primary full" id="doneBtn">Back to Menu</button></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
