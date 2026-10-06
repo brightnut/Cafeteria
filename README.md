@@ -17,13 +17,4 @@ A responsive cafeteria food-ordering frontend built with HTML, CSS and JavaScrip
 - Mobile navigation
 - Created by Ashish Yadav
 
-## Run locally
-Open `index.html` in a browser.
 
-## Deploy
-Upload `index.html`, `style.css` and `script.js` to Netlify, GitHub Pages or another static hosting service.
-
-## Resume description
-**Cafeteria Food Ordering System | HTML, CSS, JavaScript**
-- Developed a responsive cafeteria ordering web application with dynamic menu filtering, search, shopping cart and checkout workflow.
-- Implemented quantity management, GST calculation, order confirmation and LocalStorage-based cart persistence using JavaScript.
